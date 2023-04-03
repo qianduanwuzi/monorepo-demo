@@ -1,0 +1,34 @@
+lockfileVersion: '6.0'
+
+importers:
+
+  .: {}
+
+  packages/components:
+    dependencies:
+      '@packages/utils':
+        specifier: workspace:*
+        version: link:../utils
+      lodash:
+        specifier: ^4.17.21
+        version: r2.cnpmjs.org/lodash@4.17.21
+
+  packages/core: {}
+
+  packages/utils:
+    dependencies:
+      dayjs:
+        specifier: ^1.11.7
+        version: 1.11.7
+
+packages:
+
+  /dayjs@1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
+
+  r2.cnpmjs.org/lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/lodash/-/lodash-4.17.21.tgz}
+    name: lodash
+    version: 4.17.21
+    dev: false
